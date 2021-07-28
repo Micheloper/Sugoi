@@ -1,0 +1,48 @@
+/* Smartphones (VERTICAL and HORIZONTAL) ----------- */
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+  .controls__sub .controls__sub--slides section {
+    width: 20%;
+    display: flex;
+    transition: .2s linear;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; }
+}
+ 
+/* Smartphones (HORIZONTAL) ----------- */
+@media only screen and (min-width : 321px) {
+  /* Styles */
+  
+}
+ 
+/* Smartphones (VERTICAL) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+}
+ 
+/* iPads (VERTICAL and HORIZONTAL) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+}
+ 
+/* iPads (HORIZONTAL) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+ 
+/* iPads (VERTICAL) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
+}
+ 
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}

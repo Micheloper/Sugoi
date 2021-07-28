@@ -1,0 +1,42 @@
+
+
+$colorH2:rgb(233, 12, 196);
+$colorH3:gold;
+$colorH4:rgb(189, 1, 236);
+$colorH5:rgb(126, 1, 109);
+
+
+$colorBox:blueviolet;
+
+$bgH1:gold;
+
+h1{
+    background-color: $bgH1;
+    margin: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    border: 1px solid;
+    box-shadow: 15px 15px $colorBox;
+}
+h2{
+    color: $colorH2;
+    background-color: $bgH1;
+    margin: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    border: 1px solid;
+    box-shadow: 15px 15px $colorBox;
+}
+h3{
+    color: $colorH2;
+   text-align: center;
+}
+h4{
+    color: $colorH4;
+    text-align: center;
+}
+label{
+    color: $colorH5;
+}

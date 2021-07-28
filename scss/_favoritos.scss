@@ -1,0 +1,25 @@
+
+.favorito{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    background:pink;
+    background-size: cover;
+    background-position: center;
+}
+.favorito__galeria{
+    margin: 5px;
+    border: 5px solid $colorFav2;
+    display: inline-block;
+    width: 370px;
+    padding: 10px;
+    img {
+        width: 100%;
+        height: 330px;
+        border-radius: 30%;
+    } 
+}
+.favorito__galeria:hover {
+    border: 5px solid $colorFav;
+}

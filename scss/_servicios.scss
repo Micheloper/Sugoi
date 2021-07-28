@@ -1,0 +1,16 @@
+.servicio{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background:pink;
+}
+.servicio__collapse{
+        border: solid;
+        margin: 30px;
+        box-shadow: 15px 15px $colorServ;
+        display: inline-flex;
+        width: 350px;
+        padding: 20px;
+        background-color: white;
+        font-size: 20px;
+}

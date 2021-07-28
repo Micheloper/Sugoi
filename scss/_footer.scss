@@ -1,0 +1,11 @@
+.fooTer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    grid-area: pie;
+    background:pink;
+}
+.footer__contacto{
+    position: absolute;
+    right: 20px;
+}

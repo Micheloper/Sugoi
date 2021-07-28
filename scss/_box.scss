@@ -1,0 +1,142 @@
+.container{
+    height: 90vh;
+    overflow: hidden;
+    background: url(https://live.staticflickr.com/65535/51264502243_58c5c98c4f_k.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.controls{
+    position: absolute;
+    top: 4.6%; left: 10%;
+    display: flex;
+    align-items: center;
+    label{
+        height: 5rem;
+        width: 10rem;
+        background:white;
+        color: black;
+        line-height: 5rem;
+        text-align: center;
+        border-top-right-radius: 2rem;
+        cursor: pointer;
+    }
+}
+.controls label:hover{
+    background:gold;
+    color: white;
+}
+#r1:checked ~ .controls__sub .controls__sub--slides > section:nth-child(1){
+    margin-left: 0%;
+}
+#r2:checked ~ .controls__sub .controls__sub--slides > section:nth-child(1){
+    margin-left: -20%;
+}
+#r3:checked ~ .controls__sub .controls__sub--slides > section:nth-child(1){
+    margin-left: -40%;
+}
+#r4:checked ~ .controls__sub .controls__sub--slides > section:nth-child(1){
+    margin-left: -60%;
+}
+.controls__sub{
+    height: 80vh;
+    width: 80vw;
+    margin: 8rem auto;
+    background: pink; 
+    box-shadow: 0 5px 5px #333;
+    overflow: hidden;
+    .controls__sub--slides{
+        display: flex;
+        height: 100%;
+        width: 500%;
+         section{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            transition: .2s linear;
+            .image{
+                height: 40rem;
+                width: 50rem;
+                background-blend-mode: screen;
+                filter: contrast(1,35);
+            }
+            .content{
+                display: grid;
+                grid-template-columns: 1fr; 
+                button{
+                    outline: none;
+                    border: none;
+                    height: 4rem;
+                    width: 15rem;
+                    background:gold;
+                    border-radius: 20%;
+                    box-shadow: 15px 15px blueviolet;
+                    margin: 2rem;
+                    a{
+                        font-size: 2rem;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.controls__sub{
+    .controls__sub--slides{
+        section:nth-child(1){
+            .imageA{
+    background: url(https://live.staticflickr.com/65535/51264310101_18a162a79d_o.jpg)  no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+}
+} 
+} 
+.controls__sub{
+    .controls__sub--slides{
+        section:nth-child(2){
+            .imageB{
+    background: url(https://live.staticflickr.com/65535/51265347865_9fec613dda_o.jpg)  no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+}
+} 
+} 
+.controls__sub{
+    .controls__sub--slides{
+        section{
+            .imageA{
+                height: 40rem;
+                width: 50rem;
+                background-blend-mode: screen;
+                filter: contrast(1,35);
+            }
+        }
+    }
+} 
+.controls__sub{
+    .controls__sub--slides{
+        section{
+            .imageB{
+                height: 40rem;
+                width: 50rem;
+                background-blend-mode: screen;
+                filter: contrast(1,35);
+            }
+        }
+    }
+} 
+.controls__sub--relleno{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    background: rgb(235, 144, 200);
+}
+.controls__sub--rellenoDos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
