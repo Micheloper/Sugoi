@@ -33,6 +33,33 @@ h4 {
 label {
   color: #7e016d; }
 
+.texBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: black; }
+
+.texBox span {
+  margin: 30px;
+  font-size: 40px;
+  color: white; }
+
+.maquina::after {
+  content: "";
+  border-left: 2px solid #fafafa;
+  background: black;
+  right: 0;
+  height: 8%;
+  position: absolute;
+  animation: maquinaescribir 5s infinite alternate steps(20); }
+
+@keyframes maquinaescribir {
+  from {
+    width: 65%; }
+  to {
+    width: 34%; } }
+
 /*========NAV/GALERIA=======*/
 nav {
   background: linear-gradient(#e40ee4, #f5f50c);
@@ -50,7 +77,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   background: black; }
 
 .galeria__box {

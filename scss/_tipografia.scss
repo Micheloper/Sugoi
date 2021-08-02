@@ -40,3 +40,33 @@ h4{
 label{
     color: $colorH5;
 }
+.texBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background:  black;
+}
+.texBox span{
+    margin: 30px;
+    font-size: 40px;
+    color: white;
+}
+.maquina::after {
+    content: "";
+    border-left: 2px solid rgb(250, 250, 250);
+    background: black;
+    right: 0;
+    height: 8%;
+    position: absolute;
+    animation: maquinaescribir 5s infinite alternate steps(20);
+  }
+  
+  @keyframes maquinaescribir {
+    from {
+      width: 65%;
+    }
+    to {
+      width: 34%;
+    }
+  }
