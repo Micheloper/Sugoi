@@ -2,7 +2,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background:pink;
+    
+    background-size: cover;
+    background-position: center;
 }
 .servicio__collapse{
         border: solid;
@@ -13,4 +15,9 @@
         padding: 20px;
         background-color: white;
         font-size: 20px;
+}
+.Paper{
+    background:url(https://live.staticflickr.com/65535/51368133536_7dff208691_o.jpg);
+    background-size: cover;
+    background-position: center;
 }

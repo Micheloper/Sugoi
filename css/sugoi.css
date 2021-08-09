@@ -168,7 +168,8 @@ nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background: pink; }
+  background-size: cover;
+  background-position: center; }
 
 .servicio__collapse {
   border: solid;
@@ -180,12 +181,16 @@ nav {
   background-color: white;
   font-size: 20px; }
 
+.Paper {
+  background: url(https://live.staticflickr.com/65535/51368133536_7dff208691_o.jpg);
+  background-size: cover;
+  background-position: center; }
+
 .fooTer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  grid-area: pie;
-  background: pink; }
+  grid-area: pie; }
 
 .footer__contacto {
   position: absolute;
