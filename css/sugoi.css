@@ -78,7 +78,9 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background: black; }
+  background: url(https://live.staticflickr.com/65535/51353492936_c29f769f33_o.png);
+  background-size: cover;
+  background-position: center; }
 
 .galeria__box {
   position: relative;
@@ -115,8 +117,10 @@ nav {
 .favorito {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  background: pink;
+  justify-content: space-around; }
+
+.favoritoInicio {
+  background: url(https://live.staticflickr.com/65535/51368824374_c84d6c4e8a_o.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -140,7 +144,7 @@ nav {
   justify-content: center;
   grid-area: nosotros;
   padding: 30px;
-  background-image: url(https://live.staticflickr.com/65535/51264884473_02d176edb6_c.jpg);
+  background-image: url(https://live.staticflickr.com/65535/51368811844_0dbf4af888_o.jpg);
   background-size: cover;
   background-position: center; }
   .nosotros h4 {
@@ -153,6 +157,11 @@ nav {
     border-radius: 20%;
     text-align: center;
     padding: 30px; }
+
+.nosotrosInicio {
+  background-image: url(https://live.staticflickr.com/65535/51368811844_0dbf4af888_o.jpg);
+  background-size: cover;
+  background-position: center; }
 
 /*========SERVICIOS/FOOTER=======*/
 .servicio {
