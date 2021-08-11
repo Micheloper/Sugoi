@@ -38,7 +38,7 @@ label {
   justify-content: center;
   align-items: center;
   min-height: 10vh;
-  background: black; }
+  background: pink; }
 
 .texBox span {
   margin: 30px;
@@ -48,7 +48,7 @@ label {
 .maquina::after {
   content: "";
   border-left: 2px solid #fafafa;
-  background: black;
+  background: pink;
   right: 0;
   height: 8%;
   position: absolute;
@@ -197,13 +197,13 @@ nav {
   right: 20px; }
 
 /*========BOX=======*/
-.container {
-  height: 90vh;
-  overflow: hidden;
-  background: url(https://live.staticflickr.com/65535/51264502243_58c5c98c4f_k.jpg);
-  background-size: cover;
-  background-position: center; }
-
+/*.container{
+    height: 90vh;
+    overflow: hidden;
+    background: url(https://live.staticflickr.com/65535/51264502243_58c5c98c4f_k.jpg);
+    background-size: cover;
+    background-position: center;
+}*/
 .controls {
   position: absolute;
   top: 4.6%;
@@ -236,45 +236,52 @@ nav {
 #r4:checked ~ .controls__sub .controls__sub--slides > section:nth-child(1) {
   margin-left: -60%; }
 
-.controls__sub {
-  height: 100vh;
-  width: 100vw;
-  background: pink;
-  box-shadow: 0 5px 5px #333;
-  overflow: hidden;
-  border-radius: 5%; }
-  .controls__sub .controls__sub--slides {
-    display: flex;
-    height: 200%;
-    width: 500%; }
-    .controls__sub .controls__sub--slides section {
-      width: 20%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      transition: .2s linear; }
-      .controls__sub .controls__sub--slides section .image {
-        height: 40rem;
-        width: 50rem;
-        background-blend-mode: screen;
-        filter: contrast(1, 35); }
-      .controls__sub .controls__sub--slides section .content {
-        display: grid;
-        grid-template-columns: 1fr; }
-        .controls__sub .controls__sub--slides section .content button {
-          outline: none;
-          border: none;
-          height: 4rem;
-          width: 15rem;
-          background: gold;
-          border-radius: 20%;
-          box-shadow: 15px 15px blueviolet;
-          margin: 2rem; }
-          .controls__sub .controls__sub--slides section .content button a {
-            font-size: 2rem;
-            color: white;
-            text-decoration: none; }
-
+/*.controls__sub{
+    height: 100vh;
+    width: 100vw;
+    background: pink; 
+    box-shadow: 0 5px 5px #333;
+    overflow: hidden;
+    border-radius: 5%;
+    .controls__sub--slides{
+        display: flex;
+        height: 200%;
+        width: 500%;
+         section{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            transition: .2s linear;
+            .image{
+                height: 40rem;
+                width: 50rem;
+                background-blend-mode: screen;
+                filter: contrast(1,35);
+            }
+            .content{
+                display: grid;
+                grid-template-columns: 1fr; 
+                button{
+                    outline: none;
+                    border: none;
+                    height: 4rem;
+                    width: 15rem;
+                    background:gold;
+                    border-radius: 20%;
+                    box-shadow: 15px 15px blueviolet;
+                    margin: 2rem;
+                    a{
+                        font-size: 2rem;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+        }
+    }
+}*/
 .controls__sub .controls__sub--slides section:nth-child(1) .imageA {
   background: url(https://live.staticflickr.com/65535/51264310101_18a162a79d_o.jpg) no-repeat;
   background-size: cover;
@@ -337,7 +344,8 @@ nav {
   margin: 8rem auto;
   background: pink;
   box-shadow: 0 5px 5px #333;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 5%; }
   .controls__sub .controls__sub--slides {
     display: flex;
     height: 100%;
@@ -529,8 +537,8 @@ nav {
   border: 0; }
 
 /*========RESPONSIVE(INCOMPLETO)=======*/
-/* Smartphones (VERTICAL and HORIZONTAL) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/* Smartphones (VERTICAL) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
   /* Styles */
   .controls__sub .controls__sub--slides section {
     width: 20%;
@@ -538,19 +546,14 @@ nav {
     transition: .2s linear;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center; } }
-
-/* Smartphones (HORIZONTAL) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */ }
-
-/* Smartphones (VERTICAL) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */ }
-
-/* iPads (VERTICAL and HORIZONTAL) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */ }
+    justify-content: center; }
+  label {
+    color: #7e016d;
+    font-size: 30px; }
+  h3 {
+    font-size: 30px; }
+  h2 {
+    font-size: 30px; } }
 
 /* iPads (HORIZONTAL) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -558,12 +561,4 @@ nav {
 
 /* iPads (VERTICAL) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */ }
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
   /* Styles */ }

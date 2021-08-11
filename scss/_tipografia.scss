@@ -45,7 +45,7 @@ label{
     justify-content: center;
     align-items: center;
     min-height: 10vh;
-    background:  black;
+    background:  pink;
 }
 .texBox span{
     margin: 30px;
@@ -55,7 +55,7 @@ label{
 .maquina::after {
     content: "";
     border-left: 2px solid rgb(250, 250, 250);
-    background: black;
+    background: pink;
     right: 0;
     height: 8%;
     position: absolute;
