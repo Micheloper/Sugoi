@@ -16,16 +16,37 @@ and (min-device-width : 320px) and (max-device-width : 640px) {
         font-size: 30px;}
       h2{
         font-size: 30px;}
-
+        .texBox span{
+          margin: 30px;
+          font-size: 25px;
+          color: white;
+      }
+        @keyframes maquinaescribir {
+          from {
+            width: 10%;
+          }
+          to {
+            width: 90%;
+          }
+        }
+        .footer__contacto{
+          position: unset; }
+          .footer__table{
+            color: white;
+          }
+      
 }
 
- 
-/* iPads (HORIZONTAL) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  /* Styles */
-}
- 
 /* iPads (VERTICAL) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
+  .footer__table{
+    color: white;
+  }
+  @keyframes maquinaescribir {
+    from {
+      width: 75%; }
+    to {
+      width: 15%; }
+  }
 }
